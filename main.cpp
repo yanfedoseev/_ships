@@ -44,7 +44,7 @@ void check_shelf(char map[68][68], int x, int y, int i, int j)
 	for (int m = i; m < i+5; m++)
 	{
 		for (int n = j; n < j+5; n++)
-			if (map[m][n] == 'S' || map[m][n] == ' ')
+			if (map[m][n] == 'S' || map[m][n] == '.')
 				map[m][n] = '~';
 	}
 }
@@ -60,7 +60,7 @@ void rewrite_map(char map[68][68], int x, int y)
 				check_shelf(map, x, y, i, j);
 			}
 			else if (map[i][j] == 'S')
-				map[i][j] = ' ';
+				map[i][j] = '.';
 		}
 
 	// print_map(map, 0, 0, 20, 20);

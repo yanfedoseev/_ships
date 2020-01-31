@@ -31,7 +31,7 @@ void take_map(char map[68][68], int x, int y){
 	{
 		for (int j = 2; j < x+2; j++ )
 			map[i][j] = global_map[a][b++];
-		b++;
+		a++;
 	}
 
 	// print_map(map, 0, 0, 20, 20);
